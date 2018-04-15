@@ -21,6 +21,7 @@ class FeaturedViewController: UIViewController {
     //UI
     let featuredHeaderLabel: UILabel
     let featuredCollectionView: UICollectionView
+    let featuredPageControl: UIPageControl
     
     //Content
     var featuredCoverImages: [UIImage] = [#imageLiteral(resourceName: "Feature0"), #imageLiteral(resourceName: "Feature1"), #imageLiteral(resourceName: "Feature2")]
@@ -29,13 +30,16 @@ class FeaturedViewController: UIViewController {
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         layout.scrollDirection = .horizontal
+        
         featuredCollectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
         featuredHeaderLabel = UILabel()
+        featuredPageControl = UIPageControl()
         
         super.init(nibName: nil, bundle: nil)
         
         view.addSubview(featuredHeaderLabel)
         view.addSubview(featuredCollectionView)
+        view.addSubview(featuredPageControl)
         
         featuredHeaderLabel.translatesAutoresizingMaskIntoConstraints = false
         featuredHeaderLabel.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
@@ -53,6 +57,10 @@ class FeaturedViewController: UIViewController {
         featuredCollectionView.dataSource = self
         featuredCollectionView.delegate = self
         
+        featuredPageControl.translatesAutoresizingMaskIntoConstraints = false
+        featuredPageControl.bottomAnchor.constraint(equalTo: featuredCollectionView.bottomAnchor).isActive = true
+        featuredPageControl.centerXAnchor.constraint(equalTo: featuredCollectionView.centerXAnchor).isActive = true
+        
         setupViews()
     }
     
@@ -67,6 +75,11 @@ class FeaturedViewController: UIViewController {
         
         featuredCollectionView.backgroundColor = UIColor.black.withAlphaComponent(0.20)
         featuredCollectionView.isPagingEnabled = true
+        featuredCollectionView.showsHorizontalScrollIndicator = false
+        
+        
+        featuredPageControl.numberOfPages = featuredCoverImages.count
+
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -107,5 +120,18 @@ extension FeaturedViewController: UICollectionViewDataSource, UICollectionViewDe
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0
+    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let x = scrollView.contentOffset.x
+        let w = scrollView.bounds.size.width
+        featuredPageControl.currentPage = Int(ceil(x/w))
+    }
+    
+    
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        let x = scrollView.contentOffset.x
+        let w = scrollView.bounds.size.width
+        featuredPageControl.currentPage = Int(ceil(x/w))
     }
 }

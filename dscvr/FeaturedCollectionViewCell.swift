@@ -14,15 +14,30 @@ class FeaturedCollectionViewCell: UICollectionViewCell {
     override init(frame: CGRect) {
         imageView = UIImageView()
         super.init(frame: frame)
-        contentView.addSubview(imageView)
         
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
-        imageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
-        imageView.leftAnchor.constraint(equalTo: contentView.leftAnchor).isActive = true
-        imageView.rightAnchor.constraint(equalTo: contentView.rightAnchor).isActive = true
+        let topLine = UIView()
+        let bottomLine = UIView()
         
+        let stackView = UIStackView(arrangedSubviews: [topLine, imageView, bottomLine])
+        stackView.axis = .vertical
+        contentView.addSubview(stackView)
+        
+        topLine.backgroundColor = .white
+        topLine.translatesAutoresizingMaskIntoConstraints = false
+        topLine.heightAnchor.constraint(equalToConstant: 1.0).isActive = true
+        
+        bottomLine.backgroundColor = .white
+        bottomLine.translatesAutoresizingMaskIntoConstraints = false
+        bottomLine.heightAnchor.constraint(equalToConstant: 1.0).isActive = true
+        
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
+        stackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
+        stackView.leftAnchor.constraint(equalTo: contentView.leftAnchor).isActive = true
+        stackView.rightAnchor.constraint(equalTo: contentView.rightAnchor).isActive = true
+
         imageView.contentMode = .scaleAspectFill
+        imageView.clipsToBounds = true
     }
     
     required init?(coder aDecoder: NSCoder) {

@@ -95,8 +95,17 @@ class OnboardingViewController: UIViewController {
     
     
     @objc func didTapCreate() {
+        
+        let featuredNavController = DscvrNavigationViewController()
         let featuredViewController = FeaturedViewController()
-        self.navigationController?.pushViewController(featuredViewController, animated: true)
+        featuredNavController.viewControllers = [featuredViewController]
+        
+        let tabBarController = UITabBarController()
+        tabBarController.viewControllers = [featuredNavController]
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.window?.rootViewController = tabBarController
+//        self.navigationController?.pushViewController(featuredViewController, animated: true)
     }
     
     @objc func didTapSignIn() {

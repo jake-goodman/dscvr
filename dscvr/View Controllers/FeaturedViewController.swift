@@ -13,12 +13,16 @@ class FeaturedViewController: UIViewController {
     fileprivate enum Constants {
         static let featuredHeaderHeight: CGFloat = 50.0
         static let featuredHeaderFont: UIFont = UIFont(name: "norwester", size: 22.0)!
-        
+
+        static let featuredLabelInsets: UIEdgeInsets = UIEdgeInsetsMake(8, 8, 8, 8)
         static let backgroundColor: UIColor = UIColor(r: 57, g: 84, b: 98, a: 1)
         static let featuredHeight: CGFloat = (9 * UIScreen.main.bounds.width)/16.0
+        static let featuredViewHeight: CGFloat = Constants.featuredHeaderHeight + Constants.featuredHeight + 16.0
+
     }
     
     //UI
+    let featuredView: UIView
     let featuredHeaderLabel: UILabel
     let featuredCollectionView: UICollectionView
     let featuredPageControl: UIPageControl
@@ -31,32 +35,38 @@ class FeaturedViewController: UIViewController {
         layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         layout.scrollDirection = .horizontal
         
+        featuredView = UIView()
         featuredCollectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
         featuredHeaderLabel = UILabel()
         featuredPageControl = UIPageControl()
         
         super.init(nibName: nil, bundle: nil)
         
-        view.addSubview(featuredHeaderLabel)
-        view.addSubview(featuredCollectionView)
+        let featuredStackView = UIStackView(arrangedSubviews: [featuredHeaderLabel, featuredCollectionView])
+        featuredStackView.axis = .vertical
+        
+        view.addSubview(featuredView)
+        featuredView.addSubview(featuredStackView)
         view.addSubview(featuredPageControl)
+
         
-        featuredHeaderLabel.translatesAutoresizingMaskIntoConstraints = false
-        featuredHeaderLabel.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        featuredHeaderLabel.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        featuredHeaderLabel.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-        featuredHeaderLabel.heightAnchor.constraint(equalToConstant: Constants.featuredHeaderHeight).isActive = true
+        featuredView.translatesAutoresizingMaskIntoConstraints = false
+        featuredView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
+        featuredView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        featuredView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        featuredView.heightAnchor.constraint(equalToConstant: Constants.featuredViewHeight).isActive = true
         
-        featuredCollectionView.translatesAutoresizingMaskIntoConstraints = false
-        featuredCollectionView.topAnchor.constraint(equalTo: featuredHeaderLabel.bottomAnchor).isActive = true
-        featuredCollectionView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        featuredCollectionView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-        featuredCollectionView.heightAnchor.constraint(equalToConstant: Constants.featuredHeight).isActive = true
+        featuredStackView.translatesAutoresizingMaskIntoConstraints = false
+        featuredStackView.topAnchor.constraint(equalTo: featuredView.topAnchor, constant: Constants.featuredLabelInsets.top).isActive = true
+        featuredStackView.leftAnchor.constraint(equalTo: featuredView.leftAnchor).isActive = true
+        featuredStackView.rightAnchor.constraint(equalTo: featuredView.rightAnchor).isActive = true
+        featuredStackView.bottomAnchor.constraint(equalTo: featuredView.bottomAnchor, constant: -8.0).isActive = true
+        featuredStackView.spacing = 8.0
 
         featuredCollectionView.register(FeaturedCollectionViewCell.self, forCellWithReuseIdentifier: "featuredCollectionCell")
         featuredCollectionView.dataSource = self
         featuredCollectionView.delegate = self
-        
+
         featuredPageControl.translatesAutoresizingMaskIntoConstraints = false
         featuredPageControl.bottomAnchor.constraint(equalTo: featuredCollectionView.bottomAnchor).isActive = true
         featuredPageControl.centerXAnchor.constraint(equalTo: featuredCollectionView.centerXAnchor).isActive = true
@@ -66,18 +76,16 @@ class FeaturedViewController: UIViewController {
     
     func setupViews() {
         view.backgroundColor = Constants.backgroundColor
-        
-        
+        featuredView.backgroundColor = UIColor.black.withAlphaComponent(0.20)
+
         featuredHeaderLabel.font = Constants.featuredHeaderFont
         featuredHeaderLabel.textColor = .white
-        featuredHeaderLabel.text = "In the Spotlight"
-        featuredHeaderLabel.backgroundColor = UIColor.black.withAlphaComponent(0.20)
+        featuredHeaderLabel.text = " In the Spotlight"
         
-        featuredCollectionView.backgroundColor = UIColor.black.withAlphaComponent(0.20)
         featuredCollectionView.isPagingEnabled = true
         featuredCollectionView.showsHorizontalScrollIndicator = false
-        
-        
+        featuredCollectionView.backgroundColor = UIColor.black.withAlphaComponent(0.2)
+
         featuredPageControl.numberOfPages = featuredCoverImages.count
 
     }

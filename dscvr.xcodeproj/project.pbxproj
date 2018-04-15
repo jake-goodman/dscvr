@@ -17,6 +17,7 @@
 		236195AE2082FE8900261576 /* SIL Open Font License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 236195AC2082FE8900261576 /* SIL Open Font License.txt */; };
 		236195AF2082FE8900261576 /* norwester.otf in Resources */ = {isa = PBXBuildFile; fileRef = 236195AD2082FE8900261576 /* norwester.otf */; };
 		236195B22083041B00261576 /* FeaturedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236195B12083041B00261576 /* FeaturedCollectionViewCell.swift */; };
+		236195B42083220000261576 /* DscvrNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236195B32083220000261576 /* DscvrNavigationViewController.swift */; };
 		236906E42081926400BB4E2E /* FeaturedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236906E32081926400BB4E2E /* FeaturedViewController.swift */; };
 		237A9C57207F31B200CAFD49 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237A9C56207F31B200CAFD49 /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
@@ -55,6 +56,7 @@
 		236195AC2082FE8900261576 /* SIL Open Font License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SIL Open Font License.txt"; sourceTree = "<group>"; };
 		236195AD2082FE8900261576 /* norwester.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = norwester.otf; sourceTree = "<group>"; };
 		236195B12083041B00261576 /* FeaturedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedCollectionViewCell.swift; sourceTree = "<group>"; };
+		236195B32083220000261576 /* DscvrNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DscvrNavigationViewController.swift; sourceTree = "<group>"; };
 		236906E32081926400BB4E2E /* FeaturedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedViewController.swift; sourceTree = "<group>"; };
 		237A9C56207F31B200CAFD49 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -160,6 +162,7 @@
 			children = (
 				232E262D207F1B0E00A26B27 /* OnboardingViewController.swift */,
 				236906E32081926400BB4E2E /* FeaturedViewController.swift */,
+				236195B32083220000261576 /* DscvrNavigationViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				236195B42083220000261576 /* DscvrNavigationViewController.swift in Sources */,
 				237A9C57207F31B200CAFD49 /* UIView+Extension.swift in Sources */,
 				232E262E207F1B0E00A26B27 /* OnboardingViewController.swift in Sources */,
 				236195B22083041B00261576 /* FeaturedCollectionViewCell.swift in Sources */,

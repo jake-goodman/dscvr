@@ -87,7 +87,7 @@ class OnboardingViewController: UIViewController {
 
         createAccountButton.setTitle("Create Account", for: .normal)
         createAccountButton.setTitleColor(.black, for: .normal)
-        createAccountButton.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1)
+        createAccountButton.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.85)
         createAccountButton.showRoundedCorners(show: true, cornerRadius: 18.0)
         createAccountButton.addTarget(self, action: #selector(didTapCreate), for: .touchUpInside)
 
@@ -95,7 +95,8 @@ class OnboardingViewController: UIViewController {
     
     
     @objc func didTapCreate() {
-        
+        let featuredViewController = FeaturedViewController()
+        self.navigationController?.pushViewController(featuredViewController, animated: true)
     }
     
     @objc func didTapSignIn() {

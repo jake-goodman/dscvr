@@ -1,0 +1,6 @@
+framework module Pods_dscvrUITests {
+  umbrella header "Pods-dscvrUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -6,4 +6,12 @@
 //  Copyright © 2018 Jake Martin. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class BrowseViewController: UIViewController {
+    
+    fileprivate enum Constants {
+        static let featuredHeaderHeight: CGFloat = 50.0
+    }
+    
+}

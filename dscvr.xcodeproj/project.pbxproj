@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A661BD5F5BE37805A8272DE /* Pods_dscvrTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A508BE1BAA59DDF26A534ACC /* Pods_dscvrTests.framework */; };
 		232E262C207F1B0E00A26B27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232E262B207F1B0E00A26B27 /* AppDelegate.swift */; };
 		232E262E207F1B0E00A26B27 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232E262D207F1B0E00A26B27 /* OnboardingViewController.swift */; };
 		232E2633207F1B1000A26B27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 232E2632207F1B1000A26B27 /* Assets.xcassets */; };
@@ -20,6 +21,9 @@
 		236195B42083220000261576 /* DscvrNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236195B32083220000261576 /* DscvrNavigationViewController.swift */; };
 		236906E42081926400BB4E2E /* FeaturedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236906E32081926400BB4E2E /* FeaturedViewController.swift */; };
 		237A9C57207F31B200CAFD49 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237A9C56207F31B200CAFD49 /* UIView+Extension.swift */; };
+		23908209208C699D004F8BE9 /* BrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23908208208C699D004F8BE9 /* BrowseViewController.swift */; };
+		5543765C90A865839E42626B /* Pods_dscvr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61CF0941C9577DA1E490171D /* Pods_dscvr.framework */; };
+		6ACAA4BB7170F484C6D3784A /* Pods_dscvrUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECEE9DD802DD7C2DD89120CD /* Pods_dscvrUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,16 @@
 		236195B32083220000261576 /* DscvrNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DscvrNavigationViewController.swift; sourceTree = "<group>"; };
 		236906E32081926400BB4E2E /* FeaturedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedViewController.swift; sourceTree = "<group>"; };
 		237A9C56207F31B200CAFD49 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		23908208208C699D004F8BE9 /* BrowseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseViewController.swift; sourceTree = "<group>"; };
+		4803CCABBF7E04AC16FEDD35 /* Pods-dscvr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dscvr.release.xcconfig"; path = "Pods/Target Support Files/Pods-dscvr/Pods-dscvr.release.xcconfig"; sourceTree = "<group>"; };
+		55794929574A3830E3DCA6E5 /* Pods-dscvrUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dscvrUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-dscvrUITests/Pods-dscvrUITests.release.xcconfig"; sourceTree = "<group>"; };
+		61CF0941C9577DA1E490171D /* Pods_dscvr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dscvr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FEA5DE680C5C3703372E5AE /* Pods-dscvrUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dscvrUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dscvrUITests/Pods-dscvrUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A508BE1BAA59DDF26A534ACC /* Pods_dscvrTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dscvrTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9071EE1E8B24E9E9A95BD1B /* Pods-dscvr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dscvr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dscvr/Pods-dscvr.debug.xcconfig"; sourceTree = "<group>"; };
+		ECEE9DD802DD7C2DD89120CD /* Pods_dscvrUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dscvrUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3871F71F359CC4E51EBD591 /* Pods-dscvrTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dscvrTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-dscvrTests/Pods-dscvrTests.release.xcconfig"; sourceTree = "<group>"; };
+		FA4330542E03CF4FE08210A9 /* Pods-dscvrTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dscvrTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dscvrTests/Pods-dscvrTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5543765C90A865839E42626B /* Pods_dscvr.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A661BD5F5BE37805A8272DE /* Pods_dscvrTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ACAA4BB7170F484C6D3784A /* Pods_dscvrUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +110,8 @@
 				232E263F207F1B1000A26B27 /* dscvrTests */,
 				232E264A207F1B1000A26B27 /* dscvrUITests */,
 				232E2629207F1B0E00A26B27 /* Products */,
+				2E39FE44D10FD1D30C010A06 /* Pods */,
+				8A396CEAA117380664F72495 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -163,8 +182,32 @@
 				232E262D207F1B0E00A26B27 /* OnboardingViewController.swift */,
 				236906E32081926400BB4E2E /* FeaturedViewController.swift */,
 				236195B32083220000261576 /* DscvrNavigationViewController.swift */,
+				23908208208C699D004F8BE9 /* BrowseViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		2E39FE44D10FD1D30C010A06 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D9071EE1E8B24E9E9A95BD1B /* Pods-dscvr.debug.xcconfig */,
+				4803CCABBF7E04AC16FEDD35 /* Pods-dscvr.release.xcconfig */,
+				FA4330542E03CF4FE08210A9 /* Pods-dscvrTests.debug.xcconfig */,
+				F3871F71F359CC4E51EBD591 /* Pods-dscvrTests.release.xcconfig */,
+				8FEA5DE680C5C3703372E5AE /* Pods-dscvrUITests.debug.xcconfig */,
+				55794929574A3830E3DCA6E5 /* Pods-dscvrUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8A396CEAA117380664F72495 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61CF0941C9577DA1E490171D /* Pods_dscvr.framework */,
+				A508BE1BAA59DDF26A534ACC /* Pods_dscvrTests.framework */,
+				ECEE9DD802DD7C2DD89120CD /* Pods_dscvrUITests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,9 +217,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 232E2650207F1B1000A26B27 /* Build configuration list for PBXNativeTarget "dscvr" */;
 			buildPhases = (
+				0A1CAFFFACC12AD2B886EE86 /* [CP] Check Pods Manifest.lock */,
 				232E2624207F1B0E00A26B27 /* Sources */,
 				232E2625207F1B0E00A26B27 /* Frameworks */,
 				232E2626207F1B0E00A26B27 /* Resources */,
+				E55C9EC93182208BFD2A770F /* [CP] Embed Pods Frameworks */,
+				608048E967CE89197D7F3926 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,9 +237,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 232E2653207F1B1000A26B27 /* Build configuration list for PBXNativeTarget "dscvrTests" */;
 			buildPhases = (
+				3AEE17F25D75C65627F785A5 /* [CP] Check Pods Manifest.lock */,
 				232E2638207F1B1000A26B27 /* Sources */,
 				232E2639207F1B1000A26B27 /* Frameworks */,
 				232E263A207F1B1000A26B27 /* Resources */,
+				56A24A5794F96E6E82B63BFB /* [CP] Embed Pods Frameworks */,
+				48AB3F8C1D39890CF306C95B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -209,9 +258,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 232E2656207F1B1000A26B27 /* Build configuration list for PBXNativeTarget "dscvrUITests" */;
 			buildPhases = (
+				3152ED99927A83F9BDAC96AB /* [CP] Check Pods Manifest.lock */,
 				232E2643207F1B1000A26B27 /* Sources */,
 				232E2644207F1B1000A26B27 /* Frameworks */,
 				232E2645207F1B1000A26B27 /* Resources */,
+				95B04197A63E993299C55FDE /* [CP] Embed Pods Frameworks */,
+				817ADEB2CEE58D244255B929 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -294,6 +346,158 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A1CAFFFACC12AD2B886EE86 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-dscvr-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3152ED99927A83F9BDAC96AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-dscvrUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3AEE17F25D75C65627F785A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-dscvrTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48AB3F8C1D39890CF306C95B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-dscvrTests/Pods-dscvrTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56A24A5794F96E6E82B63BFB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-dscvrTests/Pods-dscvrTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		608048E967CE89197D7F3926 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-dscvr/Pods-dscvr-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		817ADEB2CEE58D244255B929 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-dscvrUITests/Pods-dscvrUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95B04197A63E993299C55FDE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-dscvrUITests/Pods-dscvrUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E55C9EC93182208BFD2A770F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-dscvr/Pods-dscvr-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-dscvr/Pods-dscvr-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		232E2624207F1B0E00A26B27 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -305,6 +509,7 @@
 				236195B22083041B00261576 /* FeaturedCollectionViewCell.swift in Sources */,
 				236906E42081926400BB4E2E /* FeaturedViewController.swift in Sources */,
 				232E262C207F1B0E00A26B27 /* AppDelegate.swift in Sources */,
+				23908209208C699D004F8BE9 /* BrowseViewController.swift in Sources */,
 				236195A92082B54200261576 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -468,15 +673,13 @@
 		};
 		232E2651207F1B1000A26B27 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9071EE1E8B24E9E9A95BD1B /* Pods-dscvr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AEBGH74Q5P;
 				INFOPLIST_FILE = dscvr/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jakemartin.dscvr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -486,15 +689,13 @@
 		};
 		232E2652207F1B1000A26B27 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4803CCABBF7E04AC16FEDD35 /* Pods-dscvr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AEBGH74Q5P;
 				INFOPLIST_FILE = dscvr/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jakemartin.dscvr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -504,17 +705,14 @@
 		};
 		232E2654207F1B1000A26B27 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA4330542E03CF4FE08210A9 /* Pods-dscvrTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AEBGH74Q5P;
 				INFOPLIST_FILE = dscvrTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jakemartin.dscvrTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -525,17 +723,14 @@
 		};
 		232E2655207F1B1000A26B27 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3871F71F359CC4E51EBD591 /* Pods-dscvrTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AEBGH74Q5P;
 				INFOPLIST_FILE = dscvrTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jakemartin.dscvrTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -546,16 +741,13 @@
 		};
 		232E2657207F1B1000A26B27 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FEA5DE680C5C3703372E5AE /* Pods-dscvrUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AEBGH74Q5P;
 				INFOPLIST_FILE = dscvrUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jakemartin.dscvrUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -566,16 +758,13 @@
 		};
 		232E2658207F1B1000A26B27 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55794929574A3830E3DCA6E5 /* Pods-dscvrUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AEBGH74Q5P;
 				INFOPLIST_FILE = dscvrUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jakemartin.dscvrUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

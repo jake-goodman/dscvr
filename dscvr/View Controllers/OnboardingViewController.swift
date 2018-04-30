@@ -100,9 +100,12 @@ class OnboardingViewController: UIViewController {
         let featuredViewController = FeaturedViewController()
         featuredNavController.viewControllers = [featuredViewController]
         
-        let tabBarController = UITabBarController()
-        tabBarController.viewControllers = [featuredNavController]
+        let browseViewController = BrowseViewController()
         
+        
+        let tabBarController = UITabBarController()
+        tabBarController.viewControllers = [featuredNavController, browseViewController]
+        tabBarController.tabBar.tintColor = .black
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.window?.rootViewController = tabBarController
 //        self.navigationController?.pushViewController(featuredViewController, animated: true)
@@ -112,4 +115,3 @@ class OnboardingViewController: UIViewController {
         
     }
 }
-

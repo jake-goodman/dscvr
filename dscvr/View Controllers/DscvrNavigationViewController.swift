@@ -21,6 +21,7 @@ class DscvrNavigationViewController: UINavigationController {
             .font: UIFont(name: "norwester", size: 24.0),
             .foregroundColor: UIColor.white]
 
+        self.title = "Spotlight"
         // Do any additional setup after loading the view.
     }
 

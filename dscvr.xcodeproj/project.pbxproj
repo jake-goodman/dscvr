@@ -20,8 +20,12 @@
 		236195B22083041B00261576 /* FeaturedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236195B12083041B00261576 /* FeaturedCollectionViewCell.swift */; };
 		236195B42083220000261576 /* DscvrNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236195B32083220000261576 /* DscvrNavigationViewController.swift */; };
 		236906E42081926400BB4E2E /* FeaturedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236906E32081926400BB4E2E /* FeaturedViewController.swift */; };
+		236D69BA2096AB79000E9B0A /* SpotifyAudioPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 236D69B82096AB78000E9B0A /* SpotifyAudioPlayback.framework */; };
+		236D69BB2096AB79000E9B0A /* SpotifyAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 236D69B92096AB78000E9B0A /* SpotifyAuthentication.framework */; };
 		237A9C57207F31B200CAFD49 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237A9C56207F31B200CAFD49 /* UIView+Extension.swift */; };
 		23908209208C699D004F8BE9 /* BrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23908208208C699D004F8BE9 /* BrowseViewController.swift */; };
+		23DA74D42096B3800039C681 /* SpotifyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DA74D32096B3800039C681 /* SpotifyManager.swift */; };
+		23DA74D62096B87C0039C681 /* SpotifyAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DA74D52096B87C0039C681 /* SpotifyAlertViewController.swift */; };
 		5543765C90A865839E42626B /* Pods_dscvr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61CF0941C9577DA1E490171D /* Pods_dscvr.framework */; };
 		6ACAA4BB7170F484C6D3784A /* Pods_dscvrUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECEE9DD802DD7C2DD89120CD /* Pods_dscvrUITests.framework */; };
 /* End PBXBuildFile section */
@@ -62,8 +66,13 @@
 		236195B12083041B00261576 /* FeaturedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedCollectionViewCell.swift; sourceTree = "<group>"; };
 		236195B32083220000261576 /* DscvrNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DscvrNavigationViewController.swift; sourceTree = "<group>"; };
 		236906E32081926400BB4E2E /* FeaturedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedViewController.swift; sourceTree = "<group>"; };
+		236D69B82096AB78000E9B0A /* SpotifyAudioPlayback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAudioPlayback.framework; sourceTree = "<group>"; };
+		236D69B92096AB78000E9B0A /* SpotifyAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAuthentication.framework; sourceTree = "<group>"; };
+		236D69BC2096AD90000E9B0A /* dscvr-bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "dscvr-bridging-header.h"; sourceTree = "<group>"; };
 		237A9C56207F31B200CAFD49 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		23908208208C699D004F8BE9 /* BrowseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseViewController.swift; sourceTree = "<group>"; };
+		23DA74D32096B3800039C681 /* SpotifyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyManager.swift; sourceTree = "<group>"; };
+		23DA74D52096B87C0039C681 /* SpotifyAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyAlertViewController.swift; sourceTree = "<group>"; };
 		4803CCABBF7E04AC16FEDD35 /* Pods-dscvr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dscvr.release.xcconfig"; path = "Pods/Target Support Files/Pods-dscvr/Pods-dscvr.release.xcconfig"; sourceTree = "<group>"; };
 		55794929574A3830E3DCA6E5 /* Pods-dscvrUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dscvrUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-dscvrUITests/Pods-dscvrUITests.release.xcconfig"; sourceTree = "<group>"; };
 		61CF0941C9577DA1E490171D /* Pods_dscvr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dscvr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +90,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5543765C90A865839E42626B /* Pods_dscvr.framework in Frameworks */,
+				236D69BB2096AB79000E9B0A /* SpotifyAuthentication.framework in Frameworks */,
+				236D69BA2096AB79000E9B0A /* SpotifyAudioPlayback.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +147,8 @@
 				232E2637207F1B1000A26B27 /* Info.plist */,
 				236195AA2082B5B800261576 /* Extensions */,
 				236195B12083041B00261576 /* FeaturedCollectionViewCell.swift */,
+				236D69BC2096AD90000E9B0A /* dscvr-bridging-header.h */,
+				23DA74D32096B3800039C681 /* SpotifyManager.swift */,
 			);
 			path = dscvr;
 			sourceTree = "<group>";
@@ -183,6 +196,7 @@
 				236906E32081926400BB4E2E /* FeaturedViewController.swift */,
 				236195B32083220000261576 /* DscvrNavigationViewController.swift */,
 				23908208208C699D004F8BE9 /* BrowseViewController.swift */,
+				23DA74D52096B87C0039C681 /* SpotifyAlertViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -203,6 +217,8 @@
 		8A396CEAA117380664F72495 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				236D69B82096AB78000E9B0A /* SpotifyAudioPlayback.framework */,
+				236D69B92096AB78000E9B0A /* SpotifyAuthentication.framework */,
 				61CF0941C9577DA1E490171D /* Pods_dscvr.framework */,
 				A508BE1BAA59DDF26A534ACC /* Pods_dscvrTests.framework */,
 				ECEE9DD802DD7C2DD89120CD /* Pods_dscvrUITests.framework */,
@@ -506,10 +522,12 @@
 				236195B42083220000261576 /* DscvrNavigationViewController.swift in Sources */,
 				237A9C57207F31B200CAFD49 /* UIView+Extension.swift in Sources */,
 				232E262E207F1B0E00A26B27 /* OnboardingViewController.swift in Sources */,
+				23DA74D42096B3800039C681 /* SpotifyManager.swift in Sources */,
 				236195B22083041B00261576 /* FeaturedCollectionViewCell.swift in Sources */,
 				236906E42081926400BB4E2E /* FeaturedViewController.swift in Sources */,
 				232E262C207F1B0E00A26B27 /* AppDelegate.swift in Sources */,
 				23908209208C699D004F8BE9 /* BrowseViewController.swift in Sources */,
+				23DA74D62096B87C0039C681 /* SpotifyAlertViewController.swift in Sources */,
 				236195A92082B54200261576 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -678,14 +696,27 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AEBGH74Q5P;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = dscvr/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"RxCocoa\"",
+					"-framework",
+					"\"RxSwift\"",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jakemartin.dscvr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Jake/dev/dscvr/dscvr/dscvr-bridging-header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -698,14 +729,27 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AEBGH74Q5P;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = dscvr/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"RxCocoa\"",
+					"-framework",
+					"\"RxSwift\"",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jakemartin.dscvr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Jake/dev/dscvr/dscvr/dscvr-bridging-header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

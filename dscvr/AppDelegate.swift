@@ -23,7 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.rootViewController = navigationController
         self.window?.makeKeyAndVisible()
-        
+    
+        SpotifyManager.shared.initialize()
         return true
     }
 
@@ -48,7 +49,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        return SpotifyManager.shared.willHandleAuthorization(url: url)
+    }
 }
 

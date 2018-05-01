@@ -8,6 +8,7 @@ target 'dscvr' do
   # Pods for dscvr
   pod 'RxSwift',    '~> 4.0'
   pod 'RxCocoa',    '~> 4.0'
+  pod 'Spartan'
 
   target 'dscvrTests' do
     inherit! :search_paths

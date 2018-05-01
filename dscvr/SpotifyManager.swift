@@ -13,7 +13,7 @@ import Spartan
 class SpotifyManager {
 
     fileprivate enum Constants {
-        static let clientID: String = "e6584495c9504139873d4c689d9a64dc" /* INSERT SPOTIFY CLIENT HERE*/
+        static let clientID: String =  /* INSERT SPOTIFY CLIENT HERE*/
         static let redirectURL: String = "dscvr://auth-redirect"
         static let sessionKey: String = "spotify-session"
     }
@@ -33,6 +33,7 @@ class SpotifyManager {
         authManager?.redirectURL = URL(string: Constants.redirectURL)
         authManager?.sessionUserDefaultsKey = Constants.sessionKey
         authManager?.requestedScopes = [SPTAuthStreamingScope]
+        Spartan.authorizationToken = authManager?.session?.accessToken
     }
     
     public func startAuthorizationFlow(on viewController: UIViewController){
@@ -56,6 +57,7 @@ class SpotifyManager {
                 else {
                     if session != nil {
                         authManager.session = session
+                        Spartan.authorizationToken = session?.accessToken
                         self.authenticationViewController?.dismiss(animated: true, completion: nil)
                     }
                 }
@@ -68,7 +70,6 @@ class SpotifyManager {
     //Spartan Search Methods
     public func search(for artist: String, _ completion: @escaping ([SimplifiedArtist])->Void) {
         _ = Spartan.search(query: artist, type: .artist, success: { (pagingObject: PagingObject<SimplifiedArtist>) in
-            // Get the artists via pagingObject.items
             if let artists = pagingObject.items {
                 completion(artists)
             }
@@ -78,6 +79,11 @@ class SpotifyManager {
     }
     
     
+    private func filter(artists: [SimplifiedArtist]) {
+        for artist in artists {
+            print(artist.id)
+        }
+    }
     
 }
 

@@ -119,10 +119,10 @@ class FeaturedViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        if SpotifyManager.shared.hasValidSession == false {
-            let spotifyAlertController = SpotifyAlertViewController()
-            self.present(spotifyAlertController, animated: true, completion: nil)
-        }
+//        if SpotifyManager.shared.hasValidSession == false {
+//            let spotifyAlertController = SpotifyAlertViewController()
+//            self.present(spotifyAlertController, animated: true, completion: nil)
+//        }
     }
 }
 

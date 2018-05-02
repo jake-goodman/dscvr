@@ -55,6 +55,9 @@ class BrowseViewController: UIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.backgroundColor = Constants.backgroundColor
+        tableView.separatorStyle = .none
+        
         
     }
     
@@ -105,7 +108,10 @@ extension BrowseViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = self.artists[indexPath.row].name
+        let artist = artists[indexPath.row]
+        cell.textLabel?.text = artist.name
+        cell.backgroundColor = Constants.backgroundColor
+        cell.textLabel?.textColor = (artist.followerCount < 10000) ? UIColor.white : UIColor.white.withAlphaComponent(0.3)
         return cell
     }
 }

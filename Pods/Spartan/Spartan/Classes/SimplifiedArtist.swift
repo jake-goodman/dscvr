@@ -25,9 +25,11 @@ public class SimplifiedArtist: SpartanBaseObject {
     }
     
     public private(set) var name: String!
+    public private(set) var followerCount: Int!
     
     public override func mapping(map: Map) {
         super.mapping(map: map)
         name <- map["name"]
+        followerCount <- map["followers.total"]
     }
 }
